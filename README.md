@@ -8,7 +8,10 @@ An end-to-end IT Project Management portfolio project simulating the delivery of
 * **Agile PM Governance:** Manage full SDLC delivery across 3 timeboxed sprints using Jira and Confluence.
 
 ---
+## 🖼️  Dashboard Preview
+![Executive Sales Dashboard Preview](./dashboard/dashboard_preview.png)
 
+---
 ## 🛠️ Repository Structure
 * **📂 data/** — Transactional dataset (240 records).
 * **📂 dashboard/** — Interactive Excel MVP Dashboard file with cross-linked slicers.
