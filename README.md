@@ -9,7 +9,8 @@ An end-to-end IT Project Management portfolio project simulating the delivery of
 
 ---
 ## 🖼️  Dashboard Preview
-![Executive Sales Dashboard Preview](./dashboard/dashboard_preview.png)
+<img width="1136" height="713" alt="E2E_Sales_Dashboard" src="https://github.com/user-attachments/assets/e50b0603-5058-4c28-8e1a-39a3709073a8" />
+
 
 ---
 ## 🛠️ Repository Structure
