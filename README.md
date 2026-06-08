@@ -10,7 +10,7 @@ An end-to-end IT Project Management portfolio project simulating the delivery of
 ---
 
 ## 🛠️ Repository Structure
-* **📂 raw_data/** — Sourced messy transactional dataset (305 records).
+* **📂 data/** — Transactional dataset (240 records).
 * **📂 dashboard/** — Interactive Excel MVP Dashboard file with cross-linked slicers.
 * **📂 project_final_report/** — High-level executive summary and final PDF project reports.
 * **📂 presentation/** — Stakeholder-facing PowerPoint presentation deliverable (.pptx).
