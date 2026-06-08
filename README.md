@@ -15,7 +15,7 @@ An end-to-end IT Project Management portfolio project simulating the delivery of
 * **📂 project_final_report/** — High-level executive summary and final PDF project reports.
 * **📂 presentation/** — Stakeholder-facing PowerPoint presentation deliverable (.pptx).
 * **📂 confluence_report/** — Project Charter, Data Dictionary, and Data Cleaning logs.
-* **📂 jira_screenshots/** — Evidence of Sprint backlogs, user story mapping, and bug tracking.
+* **📂 jira_screenshots/** — Evidence of Sprint backlogs, user story mapping, bug tracking and two individual ticket.
 
 ---
 
