@@ -1,54 +1,72 @@
-# Sales Performance Analysis & Reporting (SPAR) System
+# Sales Performance Analysis & Reporting System (SPAR)
 
-An end-to-end IT Project Management portfolio project simulating the delivery of a retail reporting system across 3 Agile Sprints.
+## 📊 Executive Summary
+A retail business was operating with 305 raw transactional records spread across inconsistent formats with no structured reporting infrastructure. There was zero visibility into which products, regions, or sales reps were driving or destroying revenue. 
 
-## 📌 Project Objectives
-* **Data Engineering:** Clean and standardize 305 raw transactional records using Power Query.
-* **Business Intelligence:** Analyze sales data across 5 dimensions using Excel Pivot Tables and deliver an interactive executive dashboard.
-* **Agile PM Governance:** Manage full SDLC delivery across 3 timeboxed sprints using Jira and Confluence.
+I managed the end-to-end delivery of an automated reporting system across **3 Agile sprints**—transforming raw data into an executive-ready dashboard with actionable strategic recommendations.
 
----
-## 🖼️  Dashboard Preview
-<img width="1136" height="713" alt="E2E_Sales_Dashboard" src="https://github.com/user-attachments/assets/e50b0603-5058-4c28-8e1a-39a3709073a8" />
+### 🖥️ Executive Sales Dashboard 
+<img width="1136" height="713" alt="E2E_Sales_Dashboard" src="https://github.com/user-attachments/assets/347270e8-63c1-4880-842d-44de76e40899" />
 
 
 ---
-## 🛠️ Repository Structure
-* **📂 data/** — Transactional dataset (240 records).
-* **📂 dashboard/** — Interactive Excel MVP Dashboard file with cross-linked slicers.
-* **📂 project_final_report/** — High-level executive summary and final PDF project reports.
-* **📂 presentation/** — Stakeholder-facing PowerPoint presentation deliverable (.pptx).
-* **📂 confluence_report/** — Project Charter, Data Dictionary, and Data Cleaning logs.
-* **📂 jira_screenshots/** — Evidence of Sprint backlogs, user story mapping, bug tracking and two individual ticket.
 
----
-
-## 👤 Project Deliverables & PM Responsibilities
-
-### 1. Project Management & Agile Governance (Jira / Confluence)
-* Managed work items under Epic `SPAR-1` across 3 distinct sprints. Achieved a **79% sprint velocity closure rate** (11/14 tickets marked Done).
-* Authored the formal Project Charter in Confluence defining project scope, constraints, and success criteria.
-
-### 2. Data Engineering & Governance (Power Query ETL)
-* Built a 6-step data transformation layer to resolve data quality flaws (duplicate records, broken date formats, inconsistent casing).
-* Documented a strategic **15% data reduction** (305 rows down to 240 clean records) via a formal Data Loss Statement accepted by stakeholders.
-
-### 3. Business Intelligence & Dashboarding (Excel)
-* Modeled data using 5 Pivot Tables: *Revenue by Month, Revenue by Product, Revenue by Region, Sales Rep Performance, and Order Status Breakdown*.
-* Built an interactive dashboard
-
----
-
-## 📈 Key Findings & Strategic Recommendations
-* **Revenue Concentration Risk:** *Laptop Pro* generates **72% of total revenue** (\$265,422 of \$366,751). **Recommendation:** Diversify the product mix to bring single-product dependency below 50%.
-* **High Order Return Rate:** The return rate sits at **26%** (nearly 3x the retail average of ~10%).
-* **Recommendation:** Spin up an immediate root-cause audit on the 74 returned orders.
-* **Territory Dispersion:** The South region leads at \$122,091 while the East territory lags heavily at \$55,907. **Recommendation:** Audit account coverage in the East region and implement cross-territory mentorship.
-
----
-
-## 💻 Tech Stack
-* **Project Tracking:** Jira Software Cloud (Scrum framework)
-* **Documentation:** Confluence Cloud (Wikis, Technical Schemas)
-* **Data Processing & BI:** Microsoft Excel (Power Query, Pivot Tables, Dynamic Layouts)
+## 🛠️ Tech Stack & Tools
+* **Project Management & Governance:** Jira Cloud (Scrum), Confluence Cloud
+* **Data Engineering & BI:** Microsoft Excel (Power Query, Pivot Tables, Interactive Slicers)
 * **Stakeholder Delivery:** Microsoft PowerPoint
+
+---
+
+## 🔍 1. The Problem
+The business lacked a reliable reporting layer. Raw data contained duplicate records, broken date formats, and inconsistent casing, making any historical analysis untrustworthy. Consequently, leadership had no clear view of where revenue was concentrated, why orders were being returned, or which territories were severely underperforming.
+
+---
+
+## ⚙️ 2. Agile Project Management & Governance
+Rather than treating this as a simple, one-off analysis, I structured the initiative as a formal project delivery to ensure transparency and repeatability.
+
+* **Sprint Execution:** Managed all deliverables under Epic **SPAR-1** across 3 timeboxed sprints, achieving a **79% sprint velocity closure rate** (11 of 14 tickets marked *Done*).
+* **Documentation:** Authored a comprehensive **Project Charter** in Confluence, defining scope, constraints, assumptions, and success criteria prior to kick-off.
+* **Issue Tracking:** Maintained full sprint backlog visibility by tracking user stories, bugs, and sub-tasks in Jira (see `/jira_screenshots`).
+* **Artifact Delivery:** Compiled a final stakeholder-facing PowerPoint presentation and PDF report as formal project closeout artifacts.
+
+---
+
+## 🧼 3. Data Engineering & Governance (Power Query ETL)
+To ensure the insights could be trusted by leadership, I developed a robust ETL pipeline focused on strict data governance:
+
+1.  **ETL Pipeline:** Built a 6-step Power Query transformation pipeline to resolve duplicate records, broken date formats, and inconsistent text casing.
+2.  **Data Governance Decision:** Formally documented a **15% data reduction** (305 raw $\rightarrow$ 240 clean records) in a **Data Loss Statement**. This was reviewed and formally accepted by stakeholders. 
+    > *PM Note: Dropping corrupted records without stakeholder sign-off is a data governance failure, not just a cleaning step.*
+
+---
+
+## 📈 4. Business Intelligence & Key Findings
+Data was modeled across 5 analytical dimensions: *Revenue by Month, Revenue by Product, Revenue by Region, Sales Rep Performance,* and *Order Status Breakdown*. 
+
+Three critical insights emerged, each mapping directly to a strategic recommendation:
+
+| Finding | Impact & Context | Actionable Recommendation |
+| :--- | :--- | :--- |
+| **1. Revenue Concentration Risk** | A single product (**Laptop Pro**) generates **72%** of total revenue ($265,422 of $366,751). This poses a severe business continuity risk. | Diversify the product mix to bring single-product dependency **below 50%**. |
+| **2. Abnormal Return Rate** | The order return rate sits at **26%** (74 orders)—nearly **3× the retail industry average** (~10%), representing massive lost margin. | Launch an immediate root-cause audit of the 74 returned orders before the next sales cycle. |
+| **3. Territory Disparity** | The **South** region leads at $122,091, while the **East** territory lags at $55,907—a **2.2× gap** with no structural explanation. | Audit East region account coverage and implement a cross-territory mentorship pairing program. |
+
+---
+
+## 💡 PM Lessons Learned
+* **Scope Data Governance Upfront:** The Data Loss Statement was not an afterthought; it was treated as a formal change request. Skipping this step in a real-world enterprise environment creates severe audit risks.
+* **Velocity is an Accountability Metric:** A 79% sprint closure rate is good, but not perfect. The 3 unclosed tickets were documented in the sprint retrospective with root causes identified (scope creep regarding complex dashboard slicer logic).
+* **No Recommendations Without Owners:** A dashboard that highlights a problem without pointing to a decision framework is just a report. Every finding must map directly to an actionable next step.
+
+---
+
+## 🗂️ Repository Structure
+```micro
+├── /data                # Raw and cleaned transactional datasets (240 clean records)
+├── /dashboard           # Interactive Excel MVP dashboard with cross-linked slicers
+├── /confluence_report   # Project Charter, Data Dictionary, and Data Cleaning logs
+├── /jira_screenshots    # Sprint backlogs, user story mapping, and bug tickets
+├── /presentation        # Stakeholder PowerPoint deliverable
+└── /project_final_report# Executive summary + finalized PDF report
